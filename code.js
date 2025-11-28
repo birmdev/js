@@ -147,7 +147,6 @@ mots.forEach((item) => {
 //L'utilisateur doit deviner le prix d'un produit qui sera généré aléatoirement.
 //A chaque tentative, l'ordinateur doit préciser si le prix à deviner est supérieur ou inférieur en affichant "c'est plus" ou "c'est moins"
 
-//On génère le nombre aléatoire grâce à une fonction et on le conserve dans une variable "mystere"
 var mystere = Math.floor(Math.random() * 10);
 
 console.log("Nombre aléatoire : " + mystere);
@@ -169,3 +168,17 @@ while (mystNbUtil != mystere) {
   mystNbUtil = Number(mystUtil);
 }
 console.log("Nombre saisi : " + mystNbUtil + " / Nb mystère : " + mystere);
+
+//CAS PRATIQUE - La victoire par l'épée
+//Créer un mini-jeu au tour par tour qui opposera 2 utilisateurs.
+//Les joueurs ont un total de 10 PV.
+//Les utilisateurs auront la possibilité de:
+//- Attaquer à l'épée (-3 PV)
+//- Attaquer à distance (-1 PV)
+//- Contrer (si l'autre joueur attaque à l'épée, il perd 1 PV)
+//- Boire une potion (+ 2 PV)
+//Le premier combattant arrivant à 0 PV perd la partie.
+//BONUS: Afficher un message à l'écran indiquant le joueur actif (J1 ou J2)
+//BONUS+: Changer la couleur de l'écran lorsqu'un joueur perd
+//BONUS++: Lancer une animation CSS lors des attaques à l'épée
+//BONUS+++: Ajouter la saisie du nom des joueurs en début de partie + une animation pour toutes les actions + du son avec ces animations
