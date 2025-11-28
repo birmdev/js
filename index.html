@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template Moderne</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Reset léger */
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        background: #f7f9fc;
+        color: #222;
+        padding: 2rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      header h1 {
+        font-size: 2.3rem;
+        font-weight: 600;
+      }
+
+      header p {
+        color: #555;
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      main {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        margin: 2rem 0 1rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: #444;
+      }
+
+      button {
+        padding: 0.8rem 1.4rem;
+        border: none;
+        border-radius: 6px;
+        background: #0077ff;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      button:hover {
+        background: #005fcc;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 4rem;
+        color: #777;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Recette Crêpes</h1>
+    </header>
+
+    <main>
+      <h2>Bienvenue</h2>
+      <p>
+        Veuillez saisir le nombre de personnes pour afficher la quantité
+        d'ingrédients nécessaire.
+      </p>
+      <input type="number" id="nbPersonnes" />
+      <button onClick="GetPerson()">Valider</button>
+      <div id="result"></div>
+    </main>
+
+    <footer>© 2025 - Votre Nom. Tous droits réservés.</footer>
+    <script src="code.js"></script>
+  </body>
+</html>
