@@ -173,12 +173,38 @@ console.log("Nombre saisi : " + mystNbUtil + " / Nb mystère : " + mystere);
 //Créer un mini-jeu au tour par tour qui opposera 2 utilisateurs.
 //Les joueurs ont un total de 10 PV.
 //Les utilisateurs auront la possibilité de:
-//- Attaquer à l'épée (-3 PV)
-//- Attaquer à distance (-1 PV)
-//- Contrer (si l'autre joueur attaque à l'épée, il perd 1 PV)
-//- Boire une potion (+ 2 PV)
+//1 - Attaquer à l'épée (-3 PV)
+//  - Joueur 1 attaque à l'épée: -3 PV pour Joeueur 2
+//  - Joueur 2 contre l'attaque à l'épée! Joueur 1 perd 1 PV
+//2 - Attaquer à distance (-1 PV)
+//  - Joueur 1 attaque à distance: - 1 PV pour Joueur 2
+//3 - Contrer (si l'autre joueur attaque à l'épée, le joueur actuel perd 1 PV) -- ignorer pour l'instant
+//4 - Boire une potion (+ 2 PV)
 //Le premier combattant arrivant à 0 PV perd la partie.
 //BONUS: Afficher un message à l'écran indiquant le joueur actif (J1 ou J2)
 //BONUS+: Changer la couleur de l'écran lorsqu'un joueur perd
 //BONUS++: Lancer une animation CSS lors des attaques à l'épée
 //BONUS+++: Ajouter la saisie du nom des joueurs en début de partie + une animation pour toutes les actions + du son avec ces animations
+var pvJ1 = 10;
+var pvJ2 = 10;
+
+//Fonction pour demander une action à un joueur
+function demanderAction(numJoueur) {
+  console.log(`\n--- Joueur ${numJoueur} ---`);
+  console.log("1 - Attaquer à l'épée (-3 PV)");
+  console.log("2 - Attaquer à distance (-1 PV))";
+  console.log("3 - Contrer (si l'autre joueur attaque à l'épée, il perd 1 PV -- )");
+  console.log("4 - Boire une potion (+ 2 PV)");
+
+  var choix = prompt("Que veux-tu faire ? (1-4)");
+  return choix;
+}
+
+while (pvJ1 > 0 || pvJ2 > 0) {
+  //Tour du joueur 1
+  //Resolution du tour
+  switch () {
+    case
+  }
+
+}
